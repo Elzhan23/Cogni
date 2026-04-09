@@ -1,245 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="m-0 p-0 box-border min-h-screen">
-  <div class="header flex items-center justify-between p-4 h-[90px] bg-white">
-    <div class="left flex items-center justify-between gap-3">
-      <img src="/icon.png" alt="" class="rounded-xl" />
-      <h1 class="text-2xl font-bold">
-        Cogni <span class="font-normal">Track</span>
-      </h1>
-    </div>
-    <div class="right flex items-center justify-between gap-3">
-      <button class="bg-red-600 p-3 text-white rounded-lg">+ Add Item</button>
-      <h1 class="text-4xl font-thin">|</h1>
-      <img src="Screenshot 2026-04-08 at 08.20.00.png" class="w-[30px] h-[30px]" />
-    </div>
-  </div>
-  <div class="con bg-gray-200 h-screen p-6">
-    <div class="flex flex-row gap-6 pb-6">
-      <div class="left bg-white p-6 rounded-xl w-[40%] h-[350px]">
-        <div class="flex justify-between items-center mb-4">
-          <h3 class="text-3xl font-bold">Hours Studied</h3>
-          <button class="p-3 text-black bg-gray-300 rounded-lg">
-            Last 11 Days
-          </button>
-        </div>
-        <div class="h-48 grid grid-cols-11 items-end gap-2 px-2 relative">
-          <div class="absolute inset-0 flex flex-col justify-between pointer-events-none border-b border-gray-100">
-            <div class="border-t border-gray-100 w-full"></div>
-            <div class="border-t border-gray-100 w-full"></div>
-            <div class="border-t border-gray-100 w-full"></div>
-          </div>
-
-          <div class="bg-red-600 rounded-t-sm w-full transition-all hover:bg-red-500" style="height: 45%"></div>
-          <div class="bg-red-600 rounded-t-sm w-full transition-all hover:bg-red-500"
-            style="grid-column: 2; height: 10%"></div>
-          <div class="bg-red-600 rounded-t-sm w-full transition-all hover:bg-red-500"
-            style="grid-column: 3; height: 30%"></div>
-          <div class="bg-red-600 rounded-t-sm w-full transition-all hover:bg-red-500"
-            style="grid-column: 4; height: 75%"></div>
-          <div class="bg-red-600 rounded-t-sm w-full transition-all hover:bg-red-500"
-            style="grid-column: 5; height: 35%"></div>
-          <div class="bg-red-600 rounded-t-sm w-full transition-all hover:bg-red-500"
-            style="grid-column: 6; height: 75%"></div>
-          <div class="bg-red-600 rounded-t-sm w-full transition-all hover:bg-red-500"
-            style="grid-column: 7; height: 70%"></div>
-          <div class="bg-red-600 rounded-t-sm w-full transition-all hover:bg-red-500"
-            style="grid-column: 8; height: 35%"></div>
-          <div class="bg-red-600 rounded-t-sm w-full transition-all hover:bg-red-500"
-            style="grid-column: 9; height: 75%"></div>
-          <div class="bg-red-600 rounded-t-sm w-full transition-all hover:bg-red-500"
-            style="grid-column: 10; height: 95%"></div>
-          <div class="bg-red-600 rounded-t-sm w-full transition-all hover:bg-red-500"
-            style="grid-column: 11; height: 40%"></div>
-        </div>
-        <div class="grid grid-cols-11 gap-2 mt-2">
-          <span class="text-[10px] text-gray-400 text-center">Mar 30</span>
-          <span class="text-[10px] text-gray-400 text-center">Mar 31</span>
-          <span class="text-[10px] text-gray-400 text-center">Apr 1</span>
-          <span class="text-[10px] text-gray-400 text-center">Apr 2</span>
-          <span class="text-[10px] text-gray-400 text-center">Apr 3</span>
-          <span class="text-[10px] text-gray-400 text-center">Apr 4</span>
-          <span class="text-[10px] text-gray-400 text-center">Apr 5</span>
-          <span class="text-[10px] text-gray-400 text-center">Apr 6</span>
-          <span class="text-[10px] text-gray-400 text-center">Apr 7</span>
-          <span class="text-[10px] text-gray-400 text-center">Apr 8</span>
-          <span class="text-[10px] text-gray-400 text-center">Apr 9</span>
-        </div>
+<body class="flex justify-center items-center bg-slate-50">
+  <div class="container overflow-hidden w-full">
+    <div class="header flex justify-between p-6 bg-white">
+      <div class="left flex items-center">
+        <img src="./images/icon.png" class="w-[45px]">
+        <span class="ml-3 text-2xl"><b>Cogni</b> Track</span>
       </div>
-      <div class="right grid grid-cols-2 grid-rows-2 w-[60%] h-[350px] gap-3">
-        <div class="box bg-white p-6 rounded-xl">
-          <div class="border-l-4 border-red-600 pl-2 h-full">
-            <div class="flex justify-between items-center mb-4">
-              <h5 class="text-xl">Total Hours Studied</h5>
-              <img src="/WhatsApp Image 2026-04-08 at 08.10.41 (1).jpeg" class="h-[40px] w-[40px]" />
-            </div>
-
-            <h2 class="text-3xl font-bold">57.4h</h2>
-          </div>
-        </div>
-
-        <div class="box bg-white p-6 rounded-xl">
-          <div class="border-l-4 border-red-600 pl-2 h-full">
-            <div class="flex justify-between items-center mb-4">
-              <h5 class="text-xl">Completion Rate</h5>
-              <img src="WhatsApp Image 2026-04-08 at 08.10.41 (2).jpeg" alt="" class="h-[40px] w-[40px]" />
-            </div>
-
-            <h2 class="text-3xl font-bold">54%</h2>
-          </div>
-        </div>
-        <div class="box bg-white p-6 rounded-xl">
-          <div class="border-l-4 border-red-600 pl-2 h-full">
-            <div class="flex justify-between items-center mb-4">
-              <h5 class="text-xl">Total Studies</h5>
-              <img src="WhatsApp Image 2026-04-08 at 08.10.41 (3).jpeg" alt="" class="h-[40px] w-[40px]" />
-            </div>
-
-            <h2 class="text-3xl font-bold">13</h2>
-          </div>
-        </div>
-        <div class="box bg-white p-6 rounded-xl">
-          <div class="border-l-4 border-red-600 pl-2 h-full">
-            <div class="flex justify-between items-center mb-4">
-              <h5 class="text-xl">Most Studied Category</h5>
-              <img src="/WhatsApp Image 2026-04-08 at 08.10.41 (2).jpeg" alt="" class="h-[40px] w-[40px]" />
-            </div>
-
-            <h2 class="text-3xl font-bold">Programming</h2>
-          </div>
-        </div>
+      <div class="right flex items-center">
+        <button class="bg-red-600 rounded-lg text-white h-10 w-28">+ Add Items</button>
+        <div class="border-r-gray-300"></div>
+        <img src="./images/sun.png" class="w-5 ml-3">
       </div>
     </div>
-    <div class="bg-white rounded-xl w-full mb-6 shadow-sm mt-[-30]">
-      <div class="flex justify-between items-center p-6 border-b border-gray-100">
-        <div>
-          <h1 class="text-3xl font-bold">Study Sessions</h1>
+    <div class="w-[635px] sm:grid sm:grid-cols-3 sm:grid-rows-2 sm:w-[1270px] h-[350px] gap-4 p-6">
+
+      <div class="bg-white col-span-1 row-span-2 rounded-lg px-6 py-1 sm:px-0 sm:py-0">
+        <div class="row flex items-center sm:justify-around justify-between mt-4">
+          <h2 class="text-xl font-bold">Hours Studied</h2> <button class="bg-gray-200 w-32 h-10 rounded-lg">Last 7
+            Days</button>
+        </div>
+        <img src="./images/main.png" class="w-[380px] mt-10 ml-[100px] sm:ml-0">
+      </div>
+      <div class="bg-white rounded-lg">
+        <div class="flex mt-5 sm:mt-0">
+          <div class="w-1 h-[110px] bg-red-500 ml-4 mt-4"></div>
+          <div class="text22 items-center p-4">
+            <span>Total Hours Studied</span>
+            <h3 class="text-2xl font-bold mt-3">57.4h</h3>
+          </div>
+          <div class="flex items-start bg-red-400 w-[40px] h-10 rounded-lg sm:ml-35 mt-5 ml-82"><img
+              src="./images/key.png" class="w-5 ml-2.5 mt-2"></div>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg">
+        <div class="flex mt-5 sm:mt-0">
+          <div class="w-1 h-[110px] bg-red-500 ml-4 mt-4"></div>
+          <div class="text22 items-center p-4">
+            <span>Completion Rate</span>
+            <h3 class="text-2xl font-bold mt-3">54%</h3>
+          </div>
+          <div class="flex items-start bg-red-400 w-[40px] h-10 rounded-lg sm:ml-41 mt-5 ml-88"><img
+              src="./images/key.png" class="w-5 ml-2.5 mt-2"></div>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg">
+        <div class="flex mt-5 sm:mt-0">
+          <div class="w-1 h-[110px] bg-red-500 ml-4 mt-4"></div>
+          <div class="text22 items-center p-4">
+            <span>Total Studies</span>
+            <h3 class="text-2xl font-bold mt-3">13</h3>
+          </div>
+          <div class="flex items-start bg-red-400 w-[40px] h-10 rounded-lg sm:ml-48 mt-5 ml-95"><img
+              src="./images/key.png" class="w-5 ml-2.5 mt-2"></div>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg">
+        <div class="flex mt-5 sm:mt-0">
+          <div class="text22 items-center p-4">
+            <span>Most Studied Category</span>
+            <h3 class="text-2xl font-bold m-3">Programming</h3>
+          </div>
+          <div class="flex items-start bg-red-400 w-[40px] h-10 rounded-lg sm:ml-33 ml-80 mt-5"><img
+              src="./images/key.png" class="w-5 ml-2.5 mt-2"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="sm:w-[1220px] bg-white h-[500px] ml-6 rounded-lg p-7 flex  flex-col mt-[550px] sm:mt-0">
+      <div class="row33 flex items-center justify-between">
+        <div class="right">
+          <h1 class="font-bold text-2xl">Study Sessions</h1>
           <span class="text-gray-500">5 Last Sessions</span>
         </div>
-        <div class="text-red-600 font-medium cursor-pointer">See More</div>
+        <div class="">
+          <h3 class="text-red-500">See More</h3>
+        </div>
       </div>
-
-      <div class="overflow-x-auto">
-        <table class="w-full text-left border-collapse table-auto">
-          <thead>
-            <tr class="bg-gray-50">
-              <th class="px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                Item
-              </th>
-              <th class="px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider text-center">
-                Category
-              </th>
-              <th class="px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                Time Studied
-              </th>
-              <th class="px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                Completed
-              </th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-100">
-            <tr>
-              <td class="px-6 py-4">React Fundamentals</td>
-              <td class="px-6 py-4 flex justify-center">
-                <span
-                  class="px-3 py-1 inline-flex items-center rounded-full bg-purple-50 border border-purple-200 text-sm text-blue-800 gap-2">
-                  <div class="w-2 h-2 rounded-full bg-blue-800"></div>
-                  Programming
-                </span>
-              </td>
-              <td class="px-6 py-4">134 Min</td>
-              <td class="px-6 py-4">
-                <div
-                  class="inline-flex items-center px-3 py-1.5 rounded-lg border border-orange-200 bg-orange-50 text-xs font-semibold text-orange-900">
-                  In Progress
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="px-6 py-4">Quantum Mechanics</td>
-              <td class="px-6 py-4 flex justify-center">
-                <span
-                  class="px-3 py-1 inline-flex items-center rounded-full bg-purple-50 border border-purple-200 text-sm text-purple-800 gap-2">
-                  <div class="w-2 h-2 rounded-full bg-purple-800"></div>
-                  Mathematics
-                </span>
-              </td>
-              <td class="px-6 py-4">225 Min</td>
-              <td class="px-6 py-4">
-                <div
-                  class="inline-flex items-center px-3 py-1.5 rounded-lg border border-orange-200 bg-orange-50 text-xs font-semibold text-orange-900">
-                  In Progress
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="px-6 py-4">Quantum Mechanics</td>
-              <td class="px-6 py-4 flex justify-center">
-                <span
-                  class="px-3 py-1 inline-flex items-center rounded-full bg-purple-50 border border-purple-200 text-sm text-purple-800 gap-2">
-                  <div class="w-2 h-2 rounded-full bg-purple-800"></div>
-                  Mathematics
-                </span>
-              </td>
-              <td class="px-6 py-4">25 Min</td>
-              <td class="px-6 py-4">
-                <div
-                  class="inline-flex items-center px-3 py-1.5 rounded-lg border border-red-200 bg-red-50 text-xs font-semibold text-red-900">
-                  Not Completed
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="px-6 py-4">Linear Algebra</td>
-              <td class="px-6 py-4 flex justify-center">
-                <span
-                  class="px-3 py-1 inline-flex items-center rounded-full bg-purple-50 border border-purple-200 text-sm text-green-800 gap-2">
-                  <div class="w-2 h-2 rounded-full bg-green-800"></div>
-                  languages
-                </span>
-              </td>
-              <td class="px-6 py-4">145 Min</td>
-              <td class="px-6 py-4">
-                <div
-                  class="inline-flex items-center px-3 py-1.5 rounded-lg border border-green-200 bg-green-50 text-xs font-semibold text-green-900">
-                  Completed
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="px-6 py-4">French Verbs</td>
-              <td class="px-6 py-4 flex justify-center">
-                <span
-                  class="px-3 py-1 inline-flex items-center rounded-full bg-purple-50 border border-purple-200 text-sm text-blue-800 gap-2">
-                  <div class="w-2 h-2 rounded-full bg-blue-800"></div>
-                  Programming
-                </span>
-              </td>
-              <td class="px-6 py-4">452 Min</td>
-              <td class="px-6 py-4">
-                <div
-                  class="inline-flex items-center px-3 py-1.5 rounded-lg border border-green-200 bg-green-50 text-xs font-semibold text-green-900">
-                  Completed
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="4gaps flex justify-between mt-20">
+        <span>ITEM</span>
+        <span>CATEGORY</span>
+        <span>TIME STUDIED</span>
+        <span>COMPLETED</span>
+      </div>
+      <div class="4gaps flex justify-between mt-5">
+        <span>React Fundamentals</span>
+        <button
+          class="bg-blue-400 text-white rounded-full w-[150px] border-blue-950 border-2 border-solid">Programming</button>
+        <span>134 Min</span>
+        <button class="bg-orange-600 text-white rounded-lg w-[100px]  border-orange-950 border-2 border-solid">In
+          Progress</button>
+      </div>
+      <div class="4gaps flex justify-between mt-5">
+        <span>Quantum Mechanics</span>
+        <button
+          class="bg-purple-600 text-white rounded-full w-[150px]  border-purple-950 border-2 border-solid">Mathematics</button>
+        <span>225 Min</span>
+        <button class="bg-orange-600 text-white rounded-lg w-[100px]  border-orange-950 border-2 border-solid">In
+          Progress</button>
+      </div>
+      <div class="4gaps flex justify-between mt-5">
+        <span>Quantum Mechanics</span>
+        <button
+          class="bg-purple-600 text-white rounded-full w-[150px]  border-purple-950 border-2 border-solid">Mathematics</button>
+        <span>25 Min</span>
+        <button class="bg-red-600 text-white rounded-lg w-[150px]  border-red-950 border-2 border-solid">Not
+          Completed</button>
+      </div>
+      <div class="4gaps flex justify-between mt-5">
+        <span>Linear Algebra</span>
+        <button
+          class="bg-green-600 text-white rounded-full w-[150px]  border-green-950 border-2 border-solid">Language</button>
+        <span>145 Min</span>
+        <button
+          class="bg-green-600 text-white rounded-lg w-[100px]  border-green-950 border-2 border-solid">Completed</button>
+      </div>
+      <div class="4gaps flex justify-between mt-5">
+        <span>French Verbs</span>
+        <button
+          class="bg-blue-600 text-white rounded-full w-[150px]  border-blue-950 border-2 border-solid">Programming</button>
+        <span>452 Min</span>
+        <button
+          class="bg-green-600 text-white rounded-lg w-[100px]  border-green-950 border-2 border-solid">Completed</button>
       </div>
     </div>
   </div>
+
 </body>
 
 </html>
